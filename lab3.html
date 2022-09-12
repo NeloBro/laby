@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>лаба 1</title>
+</head>
+<body>
+<script type="text/javascript">
+	let arr = [];
+    var n = +prompt("Введите длину массива");
+    for(let i=0;i<n;i++){
+        arr[i] = +prompt("Введите число");
+    }
+    var min = arr[0];
+    var max = arr[0];
+    var sum = 0;
+    for(let i=0;i<n;i++){
+        if(arr[i]>max){max = arr[i]}
+        if(arr[i]<min){min = arr[i]}
+        sum += arr[i];
+    }
+    document.write("Минимальное число:"+min+"<br>Максимальное число:"+max+"<br>Сумма всех чисел:"+sum);
+</script>
+</body>
+</html>
